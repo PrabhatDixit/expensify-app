@@ -13,21 +13,21 @@ import './styles/styles.scss'
 
 const store = configureStore();
 
-const expenseOne = store.dispatch(addExpense({description:'water bill', amount:300, createdAt:1585206403516}));
-const expenseTwo = store.dispatch(addExpense({description:'gas bill', amount:100, createdAt:1585206403100}));
-const expenseThree = store.dispatch(addExpense({description:'rent', amount:200, createdAt:1585206402000}));
-//store.dispatch(removeExpense({id:expenseOne.expense.id}))
+// const expenseOne = store.dispatch(addExpense({description:'water bill', amount:300, createdAt:1585206403516}));
+// const expenseTwo = store.dispatch(addExpense({description:'gas bill', amount:100, createdAt:1585206403100}));
+// const expenseThree = store.dispatch(addExpense({description:'rent', amount:200, createdAt:1585206402000}));
+// //store.dispatch(removeExpense({id:expenseOne.expense.id}))
 
-//store.dispatch ( setTextFilter ('bill'));
+// //store.dispatch ( setTextFilter ('bill'));
 
-// setTimeout( () => {
-//     store.dispatch ( setTextFilter ('water'))
-// }, 5000);
+// // setTimeout( () => {
+// //     store.dispatch ( setTextFilter ('water'))
+// // }, 5000);
 
-const state = store.getState();
-const visibleExpenses = getVisibleExpenses(state.expenses,state.filters);
+// const state = store.getState();
+// const visibleExpenses = getVisibleExpenses(state.expenses,state.filters);
 
-console.log(visibleExpenses);
+//console.log(visibleExpenses);
 
 const jsx = (
 
