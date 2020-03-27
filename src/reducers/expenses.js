@@ -22,7 +22,6 @@ const  expenseReducer = (state = [],action) => {
                 }
             } )
         case 'SET_EXPENSES':
-            console.log('EEE')
             console.log(action.expenses)
             return action.expenses;
 
