@@ -1,3 +1,6 @@
+import {getExpensesTotal} from '../selectors/expenses-total';
+import getVisibleExpenses from '../selectors/expenses';
+
 
 const  expenseReducer = (state = [],action) => {
     switch(action.type){
@@ -21,7 +24,6 @@ const  expenseReducer = (state = [],action) => {
                     return expense;
                 }
             } )
-        
         default: 
             return state;
 

@@ -18,7 +18,7 @@ const store = configureStore();
 // const expenseThree = store.dispatch(addExpense({description:'rent', amount:200, createdAt:1585206402000}));
 // //store.dispatch(removeExpense({id:expenseOne.expense.id}))
 
-// //store.dispatch ( setTextFilter ('bill'));
+// store.dispatch ( setTextFilter ('bill'));
 
 // // setTimeout( () => {
 // //     store.dispatch ( setTextFilter ('water'))
