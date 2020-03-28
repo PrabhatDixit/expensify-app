@@ -76,7 +76,7 @@ updates
 export const startEditExpense = (id,updates) => {
     return (dispatch) => {
         //first update db
-        database.ref(`expenses/${id}`).update(updates).then ( (snapshot) => {
+        return database.ref(`expenses/${id}`).update(updates).then ( (snapshot) => {
             dispatch(editExpense(id,updates) )
 
         })
