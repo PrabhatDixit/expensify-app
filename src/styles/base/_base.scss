@@ -1,9 +1,15 @@
+*{
+    box-sizing: border-box; // takes user value for height width. Default adds pading and border by default
+}
+
 html{
     font-size: 62.5%; // helps use 'rem' unit. 1 rem = 16 px
 }
 body {
     font-family:  Helvetica,Arial, sans-serif;
     font-size: $m_size;
+    color: $dark-grey;
+    line-height: 1.6;
 }
 
 button{

@@ -11,6 +11,7 @@ import 'normalize.css/normalize.css'
 import './styles/styles.scss' 
 import './firebase/firebase'
 import {firebase} from './firebase/firebase'
+import LoadingPage from './components/LoadingPage'
 
 
 const store = configureStore();
@@ -31,6 +32,8 @@ const renderApp = () => {
     }
         
 }
+
+ReactDOM.render(<LoadingPage />, document.getElementById('app'))
 
 firebase.auth().onAuthStateChanged( (user) => {
     if (user){
